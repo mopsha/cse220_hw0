@@ -32,11 +32,9 @@ void print_board(){
     for(int i = 0; i < ROWS; i++){
         for(int j = 0; j < COLS; j++){
             if(j == COLS - 1){
-                printf(board[i][j]);
-                printf("\n");
+                printf("%c\n", board[i][j]);
             }else{
-                printf(board[i][j]);
-                printf(" ");
+                printf("%c ", board[i][j]);
             }
         }
     }
