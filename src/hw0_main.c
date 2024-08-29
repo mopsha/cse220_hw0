@@ -38,7 +38,7 @@ void print_board()
         {
             if (j == COLS - 1)
             {
-                printf("%c\n", board[i][j]);
+                printf("%c \n", board[i][j]);
             }
             else
             {
