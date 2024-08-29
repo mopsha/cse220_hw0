@@ -32,23 +32,27 @@ void print_board(){
     for(int i = 0; i < ROWS; i++){
         for(int j = 0; j < COLS; j++){
             if(j == COLS - 1){
-                printf("%c\n", board[i][j]);
+                printf(board[i][j]);
+                printf("\n");
             }else{
-                printf("%c ", board[i][j]);
+                printf(board[i][j]);
+                printf(" ");
             }
         }
     }
 }
 
 int main() {
-    char piece;
+    char piece, xs, os;
+    xs = 'x';
+    os = 'o';
     int row, col, dashes;
     dashes = dash_count();
     while(dashes != 0 && dashes > 0){
         print_board();
         printf("Choose a piece (x or o) or q to quit: ");
         scanf(" %c", &piece);
-        while(!(piece == 'x' && piece == 'o')){
+        while(!(piece != xs || piece != os)){
             printf("Invalid choice. Choose a piece (x or o) or q to quit: ");
             scanf(" %c", &piece);
         }
