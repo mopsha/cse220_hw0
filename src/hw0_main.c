@@ -41,7 +41,8 @@ void print_board(){
 }
 
 int main() {
-    int piece, row, col, dashes;
+    char piece;
+    int row, col, dashes;
     dashes = dash_count();
     while(dashes != 0 && dashes > 0){
         print_board();
