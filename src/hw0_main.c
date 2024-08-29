@@ -92,7 +92,7 @@ int main()
         }
         else
         {
-            printf("Invalid choice. That space is already occupied.");
+            printf("Invalid choice. That space is already occupied.\n");
             print_board();
         }
     }
