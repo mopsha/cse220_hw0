@@ -48,7 +48,7 @@ int main() {
         print_board();
         printf("Choose a piece (x or o) or q to quit: ");
         scanf(" %c", &piece);
-        while(piece != 'x' || piece != 'o'){
+        while(!(piece == 'x' && piece == 'o')){
             printf("Invalid choice. Choose a piece (x or o) or q to quit: ");
             scanf(" %c", &piece);
         }
